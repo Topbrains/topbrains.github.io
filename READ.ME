@@ -1,0 +1,34 @@
+
+
+Temporary Workaround to get this web site to work with GitHub Pages:
+You can rename your repository to topbrains.github.io (the exact username match) and it will serve from root without the repo name.
+
+Would you like me to help you check any of these specific configurations? If you share whether you're using plain HTML or a static site generator, I can give more specific advice.
+
+The temporary workaround is good! Thanks!
+You're welcome! The temporary workaround of renaming your repository to topbrains.github.io (exactly matching your GitHub username) will make GitHub Pages serve your site directly from:
+
+https://topbrains.github.io/
+instead of
+
+https://topbrains.github.io/Web/
+Steps to Rename Your Repo:
+Go to your Web repository on GitHub.
+
+Click "Settings" (top-right tab).
+
+Under "Repository name", change Web to topbrains.github.io.
+
+Click "Rename" (GitHub will handle all redirects automatically).
+
+Important Notes:
+All links must now be root-relative (e.g., /sections/Products.html instead of /Web/sections/Products.html).
+
+If you had a custom domain, you may need to update DNS settings.
+
+If you were using GitHub Pages with a /docs folder, ensure the source is set correctly in Settings → Pages.
+
+After Renaming:
+GitHub Pages will rebuild automatically.
+
+Your site should now load at https://topbrains.github.io/sections/Products.html without the missing /Web/.
