@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="https://github.com/dart-lang/stagehand" name="scaffolded-by">
+    <title>BMI</title>
+    <link href=".styles.css" rel="stylesheet">
+    <link href=".favicon.ico" rel="icon">
+    <script defer="defer" src=".main.dart.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <script src="./scripts/include.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div w3-include-html="../html/header.html"></div>
+        <center>
+            <img src="./Images/scale.jpg" alt="Check your BMI" title="BMI" style="width: 279px; height: 185px;"><br>
+
+            <p><i>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<b><strong>&nbsp; &nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; BMI Calculator</strong></b></i>
+            </p>
+            <p>Weight&nbsp; <input id="weight_input" type="number"><span id="weight_units">
+                    pounds</span></p>
+            <p>Height&nbsp; <input id="height_input" type="number"><span id="height_units">
+                    inches</span></p>
+            <p><span>&nbsp;&nbsp; <em>Preferred Units:</em><br>
+                </span></p>
+            <p> <input checked="checked" id="unit_type1" name="unit_type" value="imperial" type="radio">imperial <input id="unit_type2" name="unit_type" value="metric" type="radio">metric </p>
+            <input id="submit" value="Calculate" type="submit">
+            <h3 id="result1">Result:</h3>
+            <h3 id="result2">Diagnostic</h3>
+            <script src="bmicalculator.dart" type="application/dart"></script>
+        </center>
+        <div w3-include-html="../html/footer.html"></div>
+    </div>
+</body>
+<script>
+    includeHTML();
+</script></html>
