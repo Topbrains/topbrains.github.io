@@ -1,8 +1,8 @@
-<!-- /Volumes/External1TB/Web/sections/About Us.html (Corrected for Relative Paths) -->
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- REMOVED base tag -->
+    <!-- <base href="/Web/"> -->
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>About Us</title>
     <meta name="description" content="Description of the Principals at Topbrains Software">
@@ -10,57 +10,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <!-- Relative paths from sections/ -->
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <script src="../scripts/include.js"></script>
+
+
 </head>
 
-<body class="w3-container m2 s3 m4 l5 w3-justify"> <!-- Removed extra space before m2 -->
+<body class="w3-container  m2 s3 m4 l5 w3-justify">
 
-    <!-- Relative path from sections/ -->
-    <div html-file="../html/header.html"></div>
+        <div html-file="../html/header.html"></div>
 
-    <h3><b>About Us</b></h3>
-    <p> <b>Topbrains</b> is a next-generation startup technology company that
-        helps enterprises re-imagine their businesses for the digital age.</p>
-    <!-- ... rest of content ... -->
-    <p> Meet some of our people:</p>
+        <h3><b>About Us</b></h3>
+        <p> <b>Topbrains</b> is a next-generation startup technology company that
+            helps enterprises re-imagine their businesses for the digital age.</p>
 
-    <div class="w3-margin-left">
-        <div class="w3-pannel" style="max-width: 650px">
-            <div class="w3-quarter">
-                <!-- CARD -->
-                <div class="w3-card-2 w3-pale-green" style="min-width:275px; max-width:275px;">
-                    <div class="w3-container w3-padding">
-                        <!-- Relative path from sections/ -->
-                        <img src="../images/Rafael.jpg" style="width:100%; margin-top:8px ">
-                        <!-- ... rest of card ... -->
+        <p> Our technology and services are built
+            on many years of experince innovating and on our hard work.</p>
+
+        <p> Our staff has world-wide management experience, a strong
+            culture of invention and risk-taking, and a relentless focus on
+            customer relationships.</p>
+
+        <p> <b>Topbrains</b> serves leading enterprises across key industries,
+            having worked with five of the Fortune 500 and ten of the Global 2000 companies. </p>
+
+        <p> We offer an integrated portfolio of products, solutions, and
+            services.We leverage most relevant technologies including Digital,
+            IoT, Cloud, Automation, Cybersecurity, Analytics, Infrastructure
+            Management and Software Development Services to help
+            enterprises re-imagine their businesses for the digital age. </p>
+
+        <p> Meet some of our people:</p>
+
+        <div class="w3-margin-left">
+            <div class="w3-pannel" style="max-width: 650px">
+                <div class="w3-quarter">
+                    <!--            CARD-->
+                    <div class="w3-card-2 w3-pale-green" style="min-width:275px; max-width:275px;">
+                        <div class="w3-container w3-padding">
+                            <img src="../images/Rafael.jpg" style="width:100%; margin-top:8px ">
+                            <div class="w3-row w3-row-padding">
+                                <div class="w3-col s9">
+                                    <b>R F Dace</b><br>
+                                    <i class="w3-small">Director Mobile Tech</i>
+                                </div>
+                                <div class="w3-col s2 w3-center">
+                                    <a href="mailto:Topbrains@gmail.com" style="color: deepskyblue"><i class="material-icons w3-xxxlarge">mail</i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--            END CARD -->
                 </div>
-                <!-- END CARD -->
-            </div>
-            <div class="w3-quarter" style="max-width:75px; margin-right:65px"> &nbsp; </div>
-            <div class="w3-quarter">
-                <!-- CARD -->
-                <div class="w3-card-2 w3-pale-green" style="min-width:275px; max-width:275px;">
-                    <div class="w3-container w3-padding">
-                        <!-- Relative path from sections/ -->
-                        <img src="../images/Daniel.jpg" style="width:100%; margin-top:8px ">
-                        <!-- ... rest of card ... -->
+                <div class="w3-quarter" style="max-width:75px; margin-right:65px"> &nbsp; </div>
+
+                <div class="w3-quarter">
+                    <!--            CARD-->
+                    <div class="w3-card-2 w3-pale-green" style="min-width:275px; max-width:275px;">
+                        <div class="w3-container w3-padding">
+                            <img src="../images/Daniel.jpg" style="width:100%; margin-top:8px ">
+                            <div class="w3-row w3-row-padding">
+                                <div class="w3-col s9">
+                                    <em><b>Daniel Fernandez</b></em><br>
+                                    <i class="w3-small">Python Technical Lead</i>
+                                </div>
+                                <div class="w3-col s2 w3-center">
+                                    <a href="mailto:daniel.fernandez92@gmail.com" style="color:deepskyblue"><i class="material-icons w3-xxxlarge">mail</i></a>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+                    <br> <br> <br>
+                    <!--            END CARD-->
                 </div>
-                <br> <br> <br>
-                <!-- END CARD -->
             </div>
         </div>
-    </div>
 
-    <!-- Relative path from sections/ -->
+
     <div html-file="../html/footer.html"></div>
 </body>
 
 <script>
     includeHTML("html-file");
-</script>
-</html>
+</script></html>
