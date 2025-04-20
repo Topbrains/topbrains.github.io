@@ -51,3 +51,14 @@ function showmenu(menuId) { // Changed parameter name for clarity (optional)
         x.className = x.className.replace("w3-show", "");  // Handle no space before
     }
 }
+
+
+  // Function to toggle the mobile navigation menu
+        function toggleMobileMenu() {
+          var x = document.getElementById("mobileMenu");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show"; // Add w3-show class to display dropdown
+          } else {
+            x.className = x.className.replace(" w3-show", ""); // Remove w3-show class to hide dropdown
+          }
+        }

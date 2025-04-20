@@ -1,19 +1,40 @@
-<!-- /Volumes/External1TB/Web/html/header.html (Revised) -->
-<!-- Removed opening/closing <body> tags -->
-<!-- Consider removing the outer <div> if the placeholder div in index.html is sufficient -->
-<div class="w3-container" style="background-image: url(../images/header.jpg);">
+<!-- /Volumes/External1TB/Web/html/header.html (Revised with Responsive Menu) -->
+
+<!-- Header Background and Title -->
+<div style="background-image: url(../images/header.jpg);">
     <center>
-        <h1 style="color: white; text-shadow:1px 1px 0 #444">Topbrains</h1>
-        <h4 class="w3-hide-small" style="color:yellow; text-shadow:1px 1px 0 #444">Top minds at work</h4>
+        <!-- Added w3-container here for padding ONLY on the text, letting background span wider -->
+        <div class="w3-container"> <!-- Added w3-container back for text padding -->
+             <h1 style="color: white; text-shadow:1px 1px 0 #444">Topbrains</h1>
+             <h4 class="w3-hide-small" style="color:yellow; text-shadow:1px 1px 0 #444">Top minds at work</h4>
+        </div>
     </center>
 </div>
 
-<!-- Normal Menu -->
-<div class="w3-bar w3-pale-green w3-small w3-center">
-    <a class="w3-bar-item w3-button w3-hide-small" href="../index.html">Home</a>
-    <a class="w3-bar-item w3-button w3-hide-small" href="../sections/Products.html">Apps</a>
-    <a class="w3-bar-item w3-button w3-hide-small" href="../sections/Articles.html">Articles</a>
-    <a class="w3-bar-item w3-button w3-hide-small" href="../sections/About%20Us.html">About Us</a>
-    <a class="w3-bar-item w3-button w3-hide-small" href="../sections/Join%20Us.html">Join Us</a>
+<!-- Normal Menu (Hidden on Small Screens) -->
+<div class="w3-bar w3-pale-green w3-small w3-center w3-hide-small">
+    <a class="w3-bar-item w3-button" href="../index.html">Home</a>
+    <a class="w3-bar-item w3-button" href="../sections/Apps.html">Apps</a>
+    <a class="w3-bar-item w3-button" href="../sections/Articles.html">Articles</a>
+    <a class="w3-bar-item w3-button" href="../sections/About%20Us.html">About Us</a>
+    <a class="w3-bar-item w3-button" href="../sections/Join%20Us.html">Join Us</a>
 </div>
-<!-- Consider moving CSS <link> tags from here to the <head> of index.html and other main pages -->
+
+<!-- Mobile Menu (Dropdown - Shown ONLY on Small Screens) -->
+<div class="w3-bar w3-pale-green w3-hide-medium w3-hide-large"> <!-- Only shows on small screens -->
+    <div class="w3-dropdown-click w3-right"> <!-- Aligns dropdown to the right -->
+        <button onclick="toggleMobileMenu()" class="w3-button w3-pale-green">
+            <i class="material-icons">menu</i> <!-- Hamburger Icon -->
+        </button>
+        <div id="mobileMenu" class="w3-dropdown-content w3-bar-block w3-card-4 w3-pale-green" style="right:0; min-width: 150px;"> <!-- Dropdown content -->
+            <a class="w3-bar-item w3-button" href="../index.html">Home</a>
+            <a class="w3-bar-item w3-button" href="../sections/Apps.html">Apps</a>
+            <a class="w3-bar-item w3-button" href="../sections/Articles.html">Articles</a>
+            <a class="w3-bar-item w3-button" href="../sections/About%20Us.html">About Us</a>
+            <a class="w3-bar-item w3-button" href="../sections/Join%20Us.html">Join Us</a>
+        </div>
+    </div>
+    <span class="w3-bar-item">Topbrains</span> <!-- Optional: Add a title to the mobile bar -->
+</div>
+
+<!-- Note: The JavaScript function toggleMobileMenu() needs to be added to your main HTML pages -->
